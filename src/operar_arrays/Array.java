@@ -5,6 +5,10 @@ public class Array {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int suma= 0;
+		int media=0;
+		int contador=0;
+		int sumaImpares=0;
+		int sumaPares=0;
 		// Declaración de array
 				int array[] = rellena_arrays(10, 1, 20);
 
@@ -13,6 +17,9 @@ public class Array {
 
 		//	Metodo sumar elementos del array
 				sumar_array(array, suma);
+				
+		// suma pares
+				sumaimpares_array(array, sumaImpares,sumaPares);
 	
 	}
 			
@@ -51,6 +58,17 @@ public class Array {
 				// Imprimo el resultado
 				System.out.println("\nSuma elementos del array: " + suma );
 
+			}
+			public static void sumaimpares_array(int[]array, int sumaImpares, int sumaPares ) {
+				for (int i = 0; i < array.length; i++) {
+					if (i % 2 == 0 ) {
+						sumaPares+=array[i];
+					}
+				else {
+					sumaImpares+=array[i];
+				}
+				}
+				System.out.println("La suma de impares es : "+sumaImpares);
 			}
 
 			/**
