@@ -6,13 +6,13 @@ public class Array {
 		// TODO Auto-generated method stub
 		int suma= 0;
 		// Declaración de array
-				int array[] = rellena_arrays(10, 1, 20);
+			int array[] = rellena_arrays(10, 1, 20);
 
 		// Mostramos el array
 				mostrarArray(array);
 
 		//	Metodo sumar elementos del array
-				sumar_array(array, suma);
+				sumar_array(array, suma); 
 	
 	}
 			
